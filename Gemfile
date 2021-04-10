@@ -63,3 +63,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Encrypt keys
 gem 'dotenv-rails', groups: [:development, :test]
+
+# Use Active Storage variants
+gem 'image_processing', '~> 1.2'

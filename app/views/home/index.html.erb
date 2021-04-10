@@ -1,1 +1,8 @@
 <%= render 'form', game: @game %>
+
+<br>
+
+<% @games.each do |game| %>
+    <%= game.name %>
+    <%= image_tag game.boardimage.last.variant( resize: "50x50" ) %>
+<% end %>
