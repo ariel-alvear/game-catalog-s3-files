@@ -66,3 +66,5 @@ gem 'dotenv-rails', groups: [:development, :test]
 
 # Use Active Storage variants
 gem 'image_processing', '~> 1.2'
+
+gem "aws-sdk-s3", "~> 1.93"
