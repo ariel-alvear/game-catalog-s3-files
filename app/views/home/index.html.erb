@@ -4,5 +4,5 @@
 
 <% @games.each do |game| %>
     <%= game.name %>
-    <%= image_tag game.boardimage.variant( resize: "50x50" ).processed %>
+    <%= image_tag game.boardimage.variant( resize: "100x100", colorspace: 'Gray' ).processed %>
 <% end %>
