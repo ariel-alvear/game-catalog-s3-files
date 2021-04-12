@@ -3,6 +3,9 @@
 <br>
 
 <% @games.each do |game| %>
+    <br>
     <%= game.name %>
     <%= image_tag game.boardimage.variant( resize: "100x100", colorspace: 'Gray' ).processed %>
+    <%= link_to 'Download rules', game.pieceimages.first.service_url %>
+    <br>
 <% end %>

@@ -21,6 +21,16 @@
         <%= form.file_field :boardimage %>
     </div>
 
+    <div class="field">
+        <%= form.label :rule, "Add PDF of game rules"%>
+        <%= form.file_field :rule %>
+    </div>
+
+    <div class="field">
+        <%= form.label :pieceimages, "Add images of game pieces"%>
+        <%= form.file_field :pieceimages %>
+    </div>
+
     <div class="actions">
         <%= form.submit %>
     </div>
