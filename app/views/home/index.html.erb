@@ -6,6 +6,10 @@
     <br>
     <%= game.name %>
     <%= image_tag game.boardimage.variant( resize: "100x100", colorspace: 'Gray' ).processed %>
-    <%= link_to 'Download rules', game.pieceimages.first.service_url %>
     <br>
+    <%= link_to 'download rules', rails_blob_path(game.rule, disposition: "attachment") %>
+    <br>
+    <% game.pieceimages.each do |image| %>
+        <%= link_to 'download piece image', rails_blob_path(image, disposition: "attachment") %>
+    <% end %>
 <% end %>
